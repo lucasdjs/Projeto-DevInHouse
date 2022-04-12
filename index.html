@@ -15,48 +15,43 @@
     <script src="index.js"></script>
 </head>
 <body>
+  <header>
+      <nav>
+          <div class="logo">
+              <a href="index.html">
+              <img src="assets/logo.png" alt="">
+          <h1>FullShop</a> </h1>
+      </div>
+      </nav>
+  </header>
 
-
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="#">
-                <img src="assets/logo.png" alt="">
-            <h1>FullShop</a> </h1>
-        </div>
-        </nav>
-</header>
-
-    <main>
+  <main>
       
     <div class="row">
-      <div class="col-8 primeiraColuna">
+      <div class="col-lg-8 primeiraColuna">
 
         <form action="">
            <h2>Adicionar Produto:</h2>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" name="produto" placeholder="Digite o nome do produto..." aria-label="Username">
-            <button type="button" class="btn btn-primary" onclick="adicionar()" >Adicionar</button>
+           <div class="container-adicionar">
+            <div class="input-group mb-3">
+            <input type="text" class="form-control" id="produto" name="produto" placeholder="Digite o nome do produto..." aria-label="Username" style="font-family: ' Raleway', Verdana, Geneva, Tahoma, sans-serif;">
+            <button type="button" class="btn btn-primary" onclick="adicionar()" style="font-family: ' Raleway', Verdana, Geneva, Tahoma, sans-serif;" >Adicionar</button>
           </div>
+        </div>
         </form>
 
       </div>
    
-      <div class="col-4 segundaColuna">
+      <div class="col-lg-4 segundaColuna">
          <h2>Lista de Produtos:</h2>
           
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault" id="mostrarResultado">
- 
-            </label>
-          </div>
+         <div id="containerProdutos"></div>
       
       </div>
 
     </div>
 
-
-</main>
+  
+  </main>
 </body>
 </html>
