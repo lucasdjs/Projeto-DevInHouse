@@ -11,3 +11,5 @@ Uma lista contendo os produtos já inseridos.
 Cada linha da lista deve conter: checkbox para o usuário marcar aquele produto que já foi comprado; o texto que o usuário digitou ao cadastrar o produto; botão para excluir o produto da lista, caso desejado.
 Quando o usuário marcar um item da compra, deve-se abrir um pop-up para que o usuário digite o valor da compra, após isso, deve-se somar ao valor total das compras.
 A lista deve ser salva no "localStorage" do navegador (incluindo os produtos que já foram realizados), e deve ser carregada sempre que a página for reaberta.
+
+:)
