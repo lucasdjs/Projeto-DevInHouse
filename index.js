@@ -1,19 +1,28 @@
-//gera guid
-const guid = Math.random().toString(36).substr(2, 9);
 
-//carrega no storage
+const guid = Math.random().toString(36).substr(3, 9);
+
+const produtos = [{
+    nome:'texto',
+    guid: guid
+}];
+
+function salvarValor(){
+    localStorage.setItem(guid, JSON.stringify(produtos))
+}
+
 function carregar(){
-    const valor = JSON.parse(localStorage.getItem(produto));
+    const valor = JSON.parse(localStorage.getItem(guid));
     
 }
 
 function adicionar(){
             //pega produto no input produto
                 const produto = String(document.getElementsByName('produto')[0].value);
-             //salva no storage
-                localStorage.setItem(guid, JSON.stringify(produto))
-             
-                    //alerta se nao tiver nada escrito na inserção de produto
+                produtos[0].nome = produto;
+               
+                localStorage.setItem(guid, JSON.stringify(produto.nome))
+                salvarValor();
+            
                      if(produto === ''){
                     alert("Insira o produto");
                       }
@@ -30,7 +39,9 @@ function adicionar(){
                                 novoCheckBox.onclick = function(){
                                     abrir();
 
-                                };                            
+                                };
+                               
+                                
     
                                 //cria a label para produto
                                 let nomeProduto = document.createElement('label');
@@ -64,19 +75,17 @@ function adicionar(){
     
     }
     
-//abre a popup
+
 
 function abrir(){
 document.getElementsByClassName('popup')[0].style.display = "block";
 }
-   //risca o texto
+   
     function riscar(){
 
     document.getElementById('label').style.textDecoration = "line-through";
    
     }
-
-    
 
 function inserirValor(){
 riscar();
