@@ -17,6 +17,8 @@ function carregar(){
 
 function adicionar(){
             //pega produto no input produto
+
+            
                 const produto = String(document.getElementsByName('produto')[0].value);
                 produtos[0].nome = produto;
                
@@ -76,17 +78,18 @@ function adicionar(){
     }
     
 
-
+//abre o popup
 function abrir(){
 document.getElementsByClassName('popup')[0].style.display = "block";
 }
-   
+   //risca o label
     function riscar(){
 
     document.getElementById('label').style.textDecoration = "line-through";
    
     }
 
+    //insere o valor na div
 function inserirValor(){
 riscar();
 
