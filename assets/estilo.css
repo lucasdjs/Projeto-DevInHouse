@@ -1,14 +1,12 @@
 body {
-  background-color: rgb(0, 232, 232);
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 header {
   width: 100%;
   height: 80px;
-  position: fixed;
+  position: absolute;
   top: 0;
   box-sizing: border-box;
   background-color: rgb(3, 2, 27);
@@ -47,6 +45,9 @@ nav .logo img {
   margin-bottom: 15px;
 }
 
+main {
+  overflow: hidden;
+}
 main .row {
   margin: 80px 100px;
   padding: 50px;
@@ -65,12 +66,31 @@ main #containerProdutos {
   text-shadow: 1px 2px 3px rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   overflow: auto;
+  padding: 15px;
+}
+
+#insereValor {
+  font-size: 25px;
+  color: black;
 }
 
 .container-adicionar {
   background-color: rgb(231, 231, 231);
   padding: 10px;
   height: 400px;
+}
+
+.container-total {
+  background-color: rgba(25, 143, 186, 0.831);
+  padding: 10px;
+  height: 250px;
+  border: 2px solid rgba(123, 123, 123, 0.451);
+  color: rgb(255, 255, 255);
+}
+.container-total h2 {
+  font-family: "Raleway", Verdana, sans-serif;
+  text-shadow: 1px 2px 3px rgb(0, 191, 255);
+  font-weight: bold;
 }
 
 input[type=checkbox] {
@@ -80,6 +100,33 @@ input[type=checkbox] {
 h2 {
   font-family: Verdana, sans-serif;
   font-weight: bold;
+}
+
+.button_delete {
+  margin: 20px;
+  font-size: 5px;
+  height: 35px;
+  padding-bottom: 10px;
+}
+
+.popup {
+  background-color: rgb(139, 139, 139);
+  width: 300px;
+  height: 200px;
+  padding: 30px;
+  position: absolute;
+  display: none;
+  border-style: groove;
+}
+.popup h2 {
+  color: white;
+}
+.popup #popup-text {
+  margin: 10px 0;
+}
+
+#mostarTitulo {
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
