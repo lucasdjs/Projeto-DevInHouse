@@ -18,18 +18,26 @@ function carregar(){
 function adicionar(){
             //pega produto no input produto
 
-            
                 const produto = String(document.getElementsByName('produto')[0].value);
                 produtos[0].nome = produto;
                
-                localStorage.setItem(guid, JSON.stringify(produto.nome))
+
+
+            //    let listaProdutos =  localStorage.getItem("listaProdutos");
+            //     if(!listaProdutos)
+            //         listaProdutos=[]
+
+
+            // //    listaProdutos.push(produto) ;
+               
+
+            //     localStorage.setItem("listaProdutos", listaProdutos)
                 salvarValor();
             
                      if(produto === ''){
                     alert("Insira o produto");
                       }
-                 else{      
-
+                    else{      
                                  //Lista produtos no elemento containerProdutos
                                 let containerProdutos = document.getElementById('containerProdutos');
                                 //cria div
